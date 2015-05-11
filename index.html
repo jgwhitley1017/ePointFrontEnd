@@ -47,24 +47,33 @@
 				</nav>
 				<div class="main">
 					<section class="post">
-						
-						<div >
-							{{ test }}
-							{{ test2 }}
-							{{ 5+5 }}
-							{{ json }}
+						<div class="products">
+							<ul>
+								<div ng-repeat="x in json.products">
+									<div class="product-info">
+				                        <h3>{{ x.name }}</h3>
+				                        <div class="product-desc">
+				                            <h4>CATEGORY</h4>
+				                            <p>{{ x.desc }}</p>
+				                            <p style="text-align:right">
+				                                <strong class="price">
+				                                    {{ x.cost }}
+				                                    <a href="/Cart/Add/1">
+				                                        <img src="data/images/add-to-cart.png" />
+				                                    </a>
+				                                </strong>
+				                            </p>
+				                        </div>
+		                    		</div>
+								</div>
+							</ul>
 						</div>
-						
 						<div class="cl">&nbsp;</div>
 					</section>
 
 					<section class="testimonial">
 
-						<p><strong class="quote">“</strong>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Cras molestie condimentum consequat. Nam leo libero, scelerisque tincidunt commodo id, hendrerit vitae orci. 
-							Suspendisse eget nibh turpis. Sed at accumsan neque. Praesent purus eros, egestas eu tempus ut, mollis et libero”
-						</p>
+						<p><strong class="quote">“</strong>{{ json.quote }}”</p>
 
 						<p class="author">John Doe, <strong>Company Name</strong></p>
 					</section>
@@ -97,7 +106,7 @@
 	<script>
 		var app = angular.module('ePoint', []);
 		app.controller('ePointCtrl', function($scope, $http) {
-			$scope.test = $http.defaults.useXDomain;
+			$scope.json = null;
 			$http.defaults.useXDomain = true;
 			$http.get("data/sampleproducts.json").success(function(data) {
 				$scope.json = data;

@@ -1,14 +1,4 @@
 {
-	"products": [
-		{"name":"Hydrocodone Bitartate and Acetaminophen","desc":"Replace nasal packing","cost":"$2.55"},
-		{"name":"Benefit BOO BOO ZAP Medicated Acne Treatment","desc":"Remove impl device NEC","cost":"$0.29"},
-		{"name":"Hydrocodone Bitartate and Acetaminophen","desc":"Replace nasal packing","cost":"$2.55"},
-		{"name":"Benefit BOO BOO ZAP Medicated Acne Treatment","desc":"Remove impl device NEC","cost":"$0.29"},
-		{"name":"Hydrocodone Bitartate and Acetaminophen","desc":"Replace nasal packing","cost":"$2.55"},
-		{"name":"Benefit BOO BOO ZAP Medicated Acne Treatment","desc":"Remove impl device NEC","cost":"$0.29"},
-		{"name":"Hydrocodone Bitartate and Acetaminophen","desc":"Replace nasal packing","cost":"$2.55"},
-		{"name":"Benefit BOO BOO ZAP Medicated Acne Treatment","desc":"Remove impl device NEC","cost":"$0.29"},
-		{"name":"Hydrocodone Bitartate and Acetaminophen","desc":"Replace nasal packing","cost":"$2.55"},
-		{"name":"Benefit BOO BOO ZAP Medicated Acne Treatment","desc":"Remove impl device NEC","cost":"$0.29"}
-	]
+	"products":[{"name":"Fentanyl","desc":"Syphilit chorioretinitis","cost":"$13.83"},{"name":"Up and Up Jock Itch Relief","desc":"Retain plac NOS-postpart","cost":"$13.20"},{"name":"Eplerenone","desc":"Heart injury NOS-open","cost":"$11.37"},{"name":"German Cockroach","desc":"Histoplasm dub pericard","cost":"$9.13"},{"name":"Levofloxacin","desc":"Sprain ulnohumeral","cost":"$8.33"},{"name":"Nitrogen","desc":"W/crft fall NEC-military","cost":"$22.38"},{"name":"Childrens Double Antibiotic with Pain Relief","desc":"Joint symptom NEC-up/arm","cost":"$10.51"},{"name":"TRUFFLE EX TREATMENT","desc":"Spon ab w compl NEC-unsp","cost":"$23.02"},{"name":"SEUK","desc":"Acute endophthalmitis","cost":"$8.58"},{"name":"Cyclobenzaprine hydrochloride","desc":"Maternal infec aff NB","cost":"$10.67"},{"name":"Prenate Chewable","desc":"Multi gest NOS-antepart","cost":"$20.40"},{"name":"Neupro","desc":"Adv eff parasympatholytc","cost":"$11.26"},{"name":"ULTRACET","desc":"Epispadias","cost":"$18.13"},{"name":"Myo-Breathe","desc":"Disproportion NOS-deliv","cost":"$21.62"},{"name":"Diltiazem Hydrochloride","desc":"Flu dt nvl A w oth resp","cost":"$22.67"}],
+	"quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie condimentum consequat. Nam leo libero, scelerisque tincidunt commodo id, hendrerit vitae orci. Suspendisse eget nibh turpis. Sed at accumsan neque. Praesent purus eros, egestas eu tempus ut, mollis et libero"
 }
