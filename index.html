@@ -112,9 +112,9 @@
 	<script src="js/ui-bootstrap-0.13.0.min.js"></script>
 		
 	<script>
-		var app = angular.module('ePoint');
-		app.controller('ePointCtrl', function ($scope, $log) {
-			$log.get("data/sampleproducts.json").success(function(data) {
+		var app = angular.module('ePoint', []);
+		app.controller('ePointCtrl', function ($scope, $http) {
+			$http.get("data/sampleproducts.json").success(function(data) {
 				$scope.json = data;
 			});
 			$scope.totalItems = 64;
@@ -126,7 +126,7 @@
 			};
 			
 			$scope.pageChanged = function() {
-			    $log.log('Page changed to: ' + $scope.currentPage);
+			    $http.log('Page changed to: ' + $scope.currentPage);
 			};
 			
 			$scope.maxSize = 5;
