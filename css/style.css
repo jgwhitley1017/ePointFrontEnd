@@ -110,7 +110,7 @@ article, aside, details, footer, header, menu, nav, section { display: block; }
 .socials ul li a.john-doe-123-ico span { background-position: -89px 0; }
 
 #footer { background: url(images/footer-cols.png) repeat 0 0; }
-#footer h2 { font-size: 23px; color: #fff; font-family: 'Ubuntu', sans-serif; font-weight: 400; padding-bottom: 18px;  }
+#footer h2 { font-size: 23px; color: #fff; font-family: 'Ubuntu', sans-serif; font-weight: 400; padding-bottom: 8px;  }
 .footer-cols { padding: 46px 24px; background: url(images/footer-lights.png) no-repeat center 0px; }
 .footer-cols .col { float: left; width: 195px; }
 .footer-cols .col + .col { padding-left: 54px;  }
