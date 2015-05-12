@@ -135,9 +135,9 @@ article, aside, details, footer, header, menu, nav, section { display: block; }
 
 
 
-.products { font-size:0; line-height:0; clear:both; display:block; height:0; padding: 16px; margin: 16px;}
+.products { font-size:0; line-height:0; clear:both; display:block; padding: 16px; margin: 16px;}
 .products ul{ list-style-type: none; padding: 16px; }
-.products ul li{ position:relative; padding:16px; border:solid 1px #dedede; float:left; width:228px; margin-right:18px; height:193px; overflow:hidden;}
+.products ul li{ position:relative; padding:16px; border:solid 1px #dedede; float:left; width:228px; margin-right:18px; height:193px; overflow:hidden; margin: 8px;}
 .products ul li.last{ margin-right:24; }
 
 .product-info{ float:right; width:236px; height: 196px; top:0px; left:16px; background: #0252aa; }
