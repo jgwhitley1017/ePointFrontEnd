@@ -20,13 +20,14 @@
 			<div class="container">
 				<!-- header -->
 				<header id="header">
-					<img src="data/images/epoint-logo.png"></img>
+					<a href="#"><img src="data/images/epoint-logo.png"></img></a>
 					<!-- search -->
 					<div class="search">
 						<form method="post">
 							<span class="field"><input type="text" class="field" value="keywords here ..." title="keywords here ..." ng-model="searchTerms"/></span>
 							<input type="submit" class="search-btn" ng-value="searchTerms" />
 						</form>
+						<strong>Cart:</strong> {{ cartCount }} Items <a href="#">Checkout</a>
 					</div>
 					<!-- end of search -->
 				</header>
@@ -63,9 +64,7 @@
 
 					<section class="testimonial">
 
-						<p><strong class="quote">“</strong>{{ json.quote }}”</p>
-
-						<p class="author">John Doe, <strong>Company Name</strong></p>
+						<p class="author">Template by Joseph Whitley, <strong>ePoint</strong></p>
 					</section>
 				</div>
 				<!-- end of main -->
@@ -102,8 +101,8 @@
 	<script>
 		var app = angular.module('ePoint', []);
 		app.controller('ePointCtrl', function ($scope, $http) {
-			$scope.totalItems = 64;
-			$scope.currentPage = 4;
+			$scope.totalItems  = 1;
+			$scope.currentPage = 1;
 			
 			$http.get("data/sampleproducts.json").success(function(data) {
 				$scope.json = data;
@@ -121,6 +120,8 @@
 			$scope.maxSize = 5;
 			$scope.bigTotalItems = 175;
 			$scope.bigCurrentPage = 1;
+			
+			$scope.cartCount = 0;
 		});
 	</script>
 </body>
