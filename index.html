@@ -37,7 +37,7 @@
 						<div class="products">
 							<ul>
 								<div ng-repeat="x in json.products">
-									<div class="product-info" ng-click="open()">
+									<div class="product-info" ng-click="open(x.id)">
 				                        <h3>{{ x.name }}</h3>
 				                        <div class="product-desc">
 				                            <h4>CATEGORY</h4>
@@ -137,12 +137,18 @@
 			
 			$scope.cartCount = 0;
 			
-			$scope.open = function (size) {
+			$scope.open = function (id) {
+				$scope.json.products.forEach(function(x){
+					if (x.id == id){
+						$scope.selectedItemName = x.name;
+						$scope.selectedLongDesc = x.longDesc;
+						return;
+					}
+				});
 				var modalInstance = $http.open({
 				    animation: $scope.animationsEnabled,
 			    	templateUrl: 'myModalContent.html',
 			    	controller: 'ePoint',
-			    	size: size,
 			    	resolve: {
 			    		items: function () {
 			    			return $scope.items;
